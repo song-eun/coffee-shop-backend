@@ -15,4 +15,8 @@ public class MemberService {
 	public void insertMember(Member m) throws Exception {
 		memberDao.insertMember(m);
 	}
+	
+	public Member login(Member m) throws Exception {
+		return memberDao.login(m);
+	}
 }
